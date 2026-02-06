@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT El Zahabi Travel Nusantara Group - Travel & Tour Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg { background: linear-gradient(135deg, #e0f2fe 0%, #a7f3d0 100%); }
+        .card { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 12px; }
+        .hover-effect { transition: transform 0.3s ease; }
+        .hover-effect:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">PT El Zahabi Travel Nusantara Group</div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-blue-600">Beranda</a>
+                <a href="#packages" class="text-gray-700 hover:text-blue-600">Paket</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-600">Tentang Kami</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600">Kontak</a>
+                <a href="login.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Masuk</a>
+            </nav>
+            <button class="md:hidden" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">Jelajahi Dunia dengan Aman & Nyaman</h1>
+            <p class="text-lg text-gray-600 mb-8">Pesan paket travel & tour, Umrah, dan halal travel terbaik bersama kami.</p>
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
+                <form class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <input type="text" placeholder="Tujuan" class="p-3 border rounded-lg">
+                    <input type="date" class="p-3 border rounded-lg">
+                    <input type="number" placeholder="Jumlah Penumpang" class="p-3 border rounded-lg">
+                    <button type="submit" class="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700">Cari Paket</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Packages -->
+    <section id="packages" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Paket Unggulan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card p-6 hover-effect">
+                    <img src="https://via.placeholder.com/300" alt="Paket Bali" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold">Liburan Bali 5 Hari</h3>
+                    <p class="text-gray-600 mb-4">Nikmati pantai dan budaya Bali dengan paket halal.</p>
+                    <p class="text-2xl font-bold text-green-600">Rp 5.000.000</p>
+                    <a href="package-detail.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg mt-4 inline-block">Lihat Detail</a>
+                </div>
+                <!-- Tambahkan lebih banyak kartu paket -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Umrah & Halal Highlights -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Umrah & Halal Travel</h2>
+            <p class="text-lg text-gray-600 mb-8">Paket ibadah yang aman, nyaman, dan sesuai syariat.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <h3>Umrah Ramadhan 2024</h3>
+                    <p>Rp 25.000.000 - Termasuk akomodasi dan transportasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo & Offers -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Promo Spesial</h2>
+            <div class="bg-yellow-100 p-8 rounded-lg text-center">
+                <h3 class="text-2xl font-semibold">Diskon 20% untuk Booking Hari Ini!</h3>
+                <p>Gunakan kode: ELZAHABI20</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Testimoni Pelanggan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card p-6 text-center">
+                    <p>"Pelayanan luar biasa, sangat profesional!"</p>
+                    <p class="font-semibold mt-4">- Ahmad S.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">PT El Zahabi Travel Nusantara Group</h3>
+                    <p>Alamat: Jl H. Boesjasin, Pelaihari, Tanah Laut Kalimantan Selatan</p>
+                    <p>Email: info@elzahabitravel.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kontak Kami</h3>
+                    <a href="https://wa.me/6285248882005" class="bg-green-600 text-white px-4 py-2 rounded-lg inline-block">
+                        <i class="fab fa-whatsapp"></i> Hubungi via WhatsApp
+                    </a>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Ikuti Kami</h3>
+                    <a href="#" class="text-gray-400 hover:text-white mr-4"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            // Toggle mobile menu (implementasi sederhana)
+            alert('Menu mobile belum diimplementasikan sepenuhnya.');
+        }
+    </script>
+</body>
+</html>
